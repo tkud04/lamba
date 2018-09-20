@@ -76,15 +76,13 @@ var hello = edge.func(function(){/*
 */});
 
 
-
-const hostname = '0.0.0.0';
 const port = process.env.PORT || 3000;
 const server = http.createServer(function(req, res) {
 	
- hello('Testing Edge in NodeJS',function(error,result){
+ /*hello('Testing Edge in NodeJS',function(error,result){
 	if(error) throw error;
 	console.log(result);
-});
+});*/
 	
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
