@@ -77,8 +77,8 @@ var hello = edge.func(function(){/*
 
 
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = '0.0.0.0';
+const port = process.env.PORT || 3000;
 const server = http.createServer(function(req, res) {
 	
  hello('Testing Edge in NodeJS',function(error,result){
